@@ -3,4 +3,4 @@ class JoinedEventsController < ApplicationController
         joined_events = JoinedEvent.all
         render json: JoinedEventSerializer.new(joined_events)
     end
-end`
+end
