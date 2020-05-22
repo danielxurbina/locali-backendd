@@ -1,4 +1,4 @@
-class FollowSerializer
+class UserSerializer
     include FastJsonapi::ObjectSerializer
-    attributes :follower, :followee
+    attributes  :name, :bio, :image_url, :password, :username
 end

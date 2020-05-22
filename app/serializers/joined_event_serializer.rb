@@ -1,4 +1,4 @@
-class FollowSerializer
+class JoinedEventSerializer
     include FastJsonapi::ObjectSerializer
-    attributes :follower, :followee
+    attributes :event, :user
 end
