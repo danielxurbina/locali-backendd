@@ -25,8 +25,8 @@ e3 = Event.create(user_id: u3.id, location: Faker::Address.city ,title: "Soccer 
 e4 = Event.create(user_id: u4.id, location: Faker::Address.city ,title: "Learn about Art at the Museum", date: Faker::Date.forward(days: 23), description: Faker::Books::Dune.quote, image_url: "https://media.getty.edu/iiif/image/4061ded0-82d9-4abc-bcaa-615eae0146e8/full/3000,/0/default.jpg", price: 0)
 e5 = Event.create(user_id: u5.id, location: Faker::Address.city ,title: "Rooftop Party", date: Faker::Date.forward(days: 23), description: Faker::Books::Dune.quote, image_url: "https://i.pinimg.com/originals/b1/a4/88/b1a4882400dc8f84fc7a5b6db9d6e651.jpg", price: 0)
 
-j1 = JoinedEvent.create(user_id: u1.id, event_id: e1.id)
-j2 = JoinedEvent.create(user_id: u2.id, event_id: e2.id)
-j3 = JoinedEvent.create(user_id: u3.id, event_id: e3.id)
-j4 = JoinedEvent.create(user_id: u4.id, event_id: e4.id)
-j5 = JoinedEvent.create(user_id: u5.id, event_id: e5.id)
+j1 = JoinedEvent.create(user_id: u1.id, event_id: e2.id)
+j2 = JoinedEvent.create(user_id: u2.id, event_id: e5.id)
+j3 = JoinedEvent.create(user_id: u3.id, event_id: e4.id)
+j4 = JoinedEvent.create(user_id: u4.id, event_id: e3.id)
+j5 = JoinedEvent.create(user_id: u5.id, event_id: e1.id)
