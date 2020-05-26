@@ -9,9 +9,15 @@ class EventsController < ApplicationController
         render json: event
     end
 
+    def show
+        event = Event.find(params[:id])
+        render json: EventSerializer.new(event)
+    end
+
     private
 
     def events_params
-        params.require(:event).permit(:title, :location, :description, :image_url, :price, :date)
+        params.require(:event).permit(:user_id, :title, :location, :description, :image_url, :price, :date)
     end
+
 end

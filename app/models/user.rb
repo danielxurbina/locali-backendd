@@ -1,7 +1,7 @@
 class User < ApplicationRecord
     has_many :events #events that the user created 
     has_many :joined_events
-    has_many :events, through: :joined_events, as: :rsvp #events that the user has joined
+    has_many :rsvp, through: :joined_events, :source => :event #events that the user has joined
 
 
     has_many :active_follows, foreign_key: :follower_id, class_name: 'Follow'
