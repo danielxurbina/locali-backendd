@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-u1 = User.create(name: Faker::Name.name  , username: Faker::Twitter.screen_name, password: "password123", bio: Faker::Games::Fallout.quote, image_url: "https://static-16.sinclairstoryline.com/resources/media/b18ba64e-3a31-42f2-aa45-e91b1927c03a-b18ba64e3a3142f2aa45e91b1927c03arendition_1_JimGrimesheadshotfinal.png?1547570373818")
-u2 = User.create(name: Faker::Name.name  , username: Faker::Twitter.screen_name, password: "password123", bio: Faker::Games::Fallout.quote, image_url: "https://www.goldenglobes.com/sites/default/files/articles/cover_images/cobie_smulder_1.jpeg")
-u3 = User.create(name: Faker::Name.name  , username: Faker::Twitter.screen_name, password: "password123", bio: Faker::Games::Fallout.quote, image_url: "https://t3me.com/en/wp-content/uploads/sites/2/2018/08/Male-Beach_iphone_0655.jpg")
-u4 = User.create(name: Faker::Name.name  , username: Faker::Twitter.screen_name, password: "password123", bio: Faker::Games::Fallout.quote, image_url: "https://t3me.com/en/features/selfie-shootout-why-the-huawei-nova-3-takes-better-selfies-than-the-iphone-x-and-the-samsung-galaxy-a8/attachment/fshnor/")
-u5 = User.create(name: Faker::Name.name  , username: Faker::Twitter.screen_name, password: "password123", bio: Faker::Games::Fallout.quote, image_url: "https://1qxya61uvyue18mpsx3zc8om-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2017/05/Rocio-500x500.jpg")
+u1 = User.create(name: Faker::Name.name, username: Faker::Twitter.screen_name, password: "password123", bio: Faker::Games::Fallout.quote, image_url: "https://static-16.sinclairstoryline.com/resources/media/b18ba64e-3a31-42f2-aa45-e91b1927c03a-b18ba64e3a3142f2aa45e91b1927c03arendition_1_JimGrimesheadshotfinal.png?1547570373818")
+u2 = User.create(name: Faker::Name.name, username: Faker::Twitter.screen_name, password: "password123", bio: Faker::Games::Fallout.quote, image_url: "https://www.goldenglobes.com/sites/default/files/articles/cover_images/cobie_smulder_1.jpeg")
+u3 = User.create(name: Faker::Name.name, username: Faker::Twitter.screen_name, password: "password123", bio: Faker::Games::Fallout.quote, image_url: "https://t3me.com/en/wp-content/uploads/sites/2/2018/08/Male-Beach_iphone_0655.jpg")
+u4 = User.create(name: Faker::Name.name, username: Faker::Twitter.screen_name, password: "password123", bio: Faker::Games::Fallout.quote, image_url: "https://t3me.com/en/features/selfie-shootout-why-the-huawei-nova-3-takes-better-selfies-than-the-iphone-x-and-the-samsung-galaxy-a8/attachment/fshnor/")
+u5 = User.create(name: Faker::Name.name, username: Faker::Twitter.screen_name, password: "password123", bio: Faker::Games::Fallout.quote, image_url: "https://1qxya61uvyue18mpsx3zc8om-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2017/05/Rocio-500x500.jpg")
 
 f1 = Follow.create(follower_id: u1.id, followee_id: u2.id)
 f2 = Follow.create(follower_id: u2.id, followee_id: u3.id)
