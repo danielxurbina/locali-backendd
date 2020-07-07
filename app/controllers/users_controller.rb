@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
     def index
         users = User.all
         render json: UserSerializer.new(users)
@@ -15,9 +16,12 @@ class UsersController < ApplicationController
         render json: UserSerializer.new(user)
     end
 
+    #remember to update routes when I add functionality to create new user and delete account
+
     private 
 
     def user_params
         params.require(:user).permit(:name, :bio, :image_url, :username)
     end
+
 end
