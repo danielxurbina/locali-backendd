@@ -1,4 +1,5 @@
 class JoinedEventsController < ApplicationController
+
     def index
         joined_events = JoinedEvent.all
         render json: JoinedEventSerializer.new(joined_events)
@@ -19,4 +20,5 @@ class JoinedEventsController < ApplicationController
     def joined_events_params
         params.require(:joined_event).permit(:user_id, :event_id)
     end
+    
 end
