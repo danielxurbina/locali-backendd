@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :joined_events, only: [:index, :create, :show]
+  resources :joined_events, only: [:index, :create, :show, :destroy]
   resources :follows, only: [:index]
   resources :users, only: [:index, :show, :update]
   resources :events, only: [:index, :create, :show, :update, :destroy]

@@ -15,6 +15,12 @@ class JoinedEventsController < ApplicationController
         render json: JoinedEventSerializer.new(joined_event)
     end
 
+    def destroy 
+        joined_event = JoinedEvent.find(params[:id])
+        joined_event.destroy
+        render json: joined_event
+    end
+
     private
 
     def joined_events_params
